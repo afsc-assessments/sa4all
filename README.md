@@ -1,5 +1,5 @@
-# sa4ss
-> A library to generate a stock assessment document in pdf form that incorporates [Stock Synthesis][ss] output.
+# sa4all (from sa4ss...)
+> A library to generate a stock assessment document in pdf form that incorporates [Stock Synthesis][ss] and potentially other output.
 
 * [Rationale](#rationale)
 * [User community](#user-community)
