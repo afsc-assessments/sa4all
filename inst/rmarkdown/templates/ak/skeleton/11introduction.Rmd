@@ -1,18 +1,17 @@
 # Introduction
-## Basic Information
+## General information
 `r executive[["stock"]]`
 
-## Life History
+## Review of life history
 Replace text.
 
-## Ecosystem Considerations
+## Stock structure
 Replace text.
 
-## Historical and Current Fishery Information
-Replace text.
+## Fishery
 
-## Summary of Management History and Performance
-Replace text.
+### Description of the directed fishery
 
-## Foreign Fisheries
-Replace text.
+### Management measures
+
+### Economic conditions
