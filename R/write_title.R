@@ -25,6 +25,6 @@ write_title <- function(species, latin, coast,
   fileout = "00title.Rmd") {
   xfun::write_utf8(text = c("---\n",
     yaml::as.yaml(list(title = paste0("Status of ", species, " (_", latin, "_)",
-    " along the ", coast, " coast in ", year))),
+    " in the ", coast, " for ", year))),
     "---"), con = fileout, sep = "")
 }

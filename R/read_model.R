@@ -1,13 +1,13 @@
-#' Create a \pkg{sa4ss} an RData object
+#' Create a \pkg{sa4all} an RData object
 #'
 #' Read an SS model output using \pkg{r4ss} to create a RData object with defined quantities
-#' to be used when creating an assessment document using sa4ss
-#' document written with \pkg{sa4ss}.
+#' to be used when creating an assessment document using sa4all
+#' document written with \pkg{sa4all}.
 #'
 #' @details
 #' Read an SS model output using \pkg{r4ss} to create a RData object with defined quantities
-#' to be used when creating an assessment document using sa4ss
-#' document written with \pkg{sa4ss}.
+#' to be used when creating an assessment document using sa4all
+#' document written with \pkg{sa4all}.
 #'
 #' @template mod_loc
 #' @param save_loc optional input that requires a full path which will 
@@ -65,7 +65,7 @@
 #' simplemod_loc <- tail(dir(pattern = "simple",
 #'   system.file("extdata", package = "r4ss"),
 #'   full.names = TRUE), 1)
-#' sa4ss::read_model(mod_loc = simplemod_loc,
+#' sa4all::read_model(mod_loc = simplemod_loc,
 #'   fecund_mult = "billion eggs")
 #' }
 #' @export

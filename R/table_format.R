@@ -1,8 +1,8 @@
-#' Custom table for sa4ss
+#' Custom table for sa4all
 #'
 #'
 #' @param x An R object, typically a matrix or data frame.
-#' @param format As defined by [kableExtra::kbl()]. Default for sa4ss is 'latex'.
+#' @param format As defined by [kableExtra::kbl()]. Default for sa4all is 'latex'.
 #' @param caption As defined by [kableExtra::kbl()].
 #' @param label As defined by [kableExtra::kbl()].
 #' @param booktabs As defined by [kableExtra::kbl()]. Logical.

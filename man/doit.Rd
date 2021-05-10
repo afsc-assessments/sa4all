@@ -4,13 +4,10 @@
 \alias{doit}
 \title{Internal Code to Build, Load, and Render the sa Template}
 \usage{
-doit(
-  dirgit = "c:/stockAssessment/ss/sa4ss",
-  authors = c("Kelli F. Johnson", "Chantel R. Wetzel", "Joseph J. Bizzarro")
-)
+doit(dirgit = "~/_myods/sa4all", authors = c("James N. Ianelli"))
 }
 \arguments{
-\item{dirgit}{A file path to where the sa4ss repository is cloned.}
+\item{dirgit}{A file path to where the sa4all repository is cloned.}
 
 \item{authors}{A vector of author names. For example,
 \code{"John R. Doe"} without first name first. The middle
@@ -24,7 +21,7 @@ workflow ensures that the author's address is also added.}
 }
 \description{
 A non-exported function used by Kelli F. Johnson to
-build and load \pkg{sa4ss} and copy and render the template
+build and load \pkg{sa4all} and copy and render the template
 for a stock assessment document.
 }
 \author{

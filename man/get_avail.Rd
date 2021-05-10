@@ -6,7 +6,7 @@
 \usage{
 get_avail(
   precursor,
-  dir = system.file("rmarkdown", "templates", "sa", package = "sa4ss")
+  dir = system.file("rmarkdown", "templates", "sa", package = "sa4all")
 )
 }
 \arguments{
@@ -23,10 +23,10 @@ files from the default template.}
 }
 \value{
 Returns a vector of character values. The resulting vector is most
-likely used by other functions in \code{sa4ss}.
+likely used by other functions in \code{sa4all}.
 }
 \description{
-Get available options in the \code{sa4ss} package for a given section.
+Get available options in the \code{sa4all} package for a given section.
 By section, we are referring to a section in the document such as the
 section on fishery-independent information, which is denoted in the
 files using \code{s} and is part of the Data section, i.e., section 03.

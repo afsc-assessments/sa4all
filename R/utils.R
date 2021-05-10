@@ -17,7 +17,7 @@ techreport_pdf <- function(
   pandoc_args = c("--top-level-division=section", "--wrap=none", "--default-image-extension=png", "--lua-filter=tagged-filter.lua"),
   ...) {
   latex_engine <- match.arg(latex_engine, several.ok = FALSE)
-  file <- system.file("rmarkdown","templates", "sa", "resources", "sadraft.tex", package = "sa4ss")
+  file <- system.file("rmarkdown","templates", "sa", "resources", "sadraft.tex", package = "sa4all")
 
   base <- bookdown::pdf_book(
     template = file,

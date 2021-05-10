@@ -2,7 +2,7 @@
 % Please edit documentation in R/session.R
 \name{session_test}
 \alias{session_test}
-\title{Test your installation of sa4ss}
+\title{Test your installation of sa4all}
 \usage{
 session_test()
 }
@@ -11,7 +11,7 @@ A list object is returned with two entries.
 The first entry, \code{session_info},
 contains stored information about your work session.
 The typical output from \link{Sys.getenv} is augmented with information pertinent
-to the sa4ss package and compiling accessible pdf documents.
+to the sa4all package and compiling accessible pdf documents.
 The second entry, \code{tried}, is the output from \link{tryCatch} when attempting
 to compile the .Rmd files into a pdf using \link[bookdown:render_book]{bookdown::render_book}.
 If the function fails to produce a successful pdf, then a
@@ -19,13 +19,13 @@ If the function fails to produce a successful pdf, then a
 where they can fill out an issue based on the installation issue template.
 }
 \description{
-Test the installation of sa4ss to build the template pdf.
+Test the installation of sa4all to build the template pdf.
 }
 \details{
-sa4ss relies on a lot of back-end functionality that typical R packages
+sa4all relies on a lot of back-end functionality that typical R packages
 do not require. Ensuring that these are installed properly is facilitated
 when you use Rstudio because the developers of Rstudio have put in a lot of
-work towards making it easy for users to compile documents. sa4ss also relies
+work towards making it easy for users to compile documents. sa4all also relies
 on \code{sed} which is available in the tools provided by R, i.e., rtools40, but
 not always available in your path.
 

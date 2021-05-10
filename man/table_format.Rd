@@ -2,7 +2,7 @@
 % Please edit documentation in R/table_format.R
 \name{table_format}
 \alias{table_format}
-\title{Custom table for sa4ss}
+\title{Custom table for sa4all}
 \usage{
 table_format(
   x,
@@ -18,7 +18,7 @@ table_format(
   align = "c",
   col_names_align = "c",
   hold_position = TRUE,
-  escape = FALSE,
+  escape = TRUE,
   bold_header = FALSE,
   landscape = FALSE,
   repeat_header = FALSE,
@@ -34,7 +34,7 @@ table_format(
 \arguments{
 \item{x}{An R object, typically a matrix or data frame.}
 
-\item{format}{As defined by \code{\link[kableExtra:kbl]{kableExtra::kbl()}}. Default for sa4ss is 'latex'.}
+\item{format}{As defined by \code{\link[kableExtra:kbl]{kableExtra::kbl()}}. Default for sa4all is 'latex'.}
 
 \item{caption}{As defined by \code{\link[kableExtra:kbl]{kableExtra::kbl()}}.}
 
@@ -82,7 +82,7 @@ in the col_to_adjust.}
 \item{...}{Extra arguments supplied to \code{\link[kableExtra]{kbl}}.}
 }
 \description{
-Custom table for sa4ss
+Custom table for sa4all
 }
 \examples{
 table_format(head(iris))

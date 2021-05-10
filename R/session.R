@@ -1,12 +1,12 @@
-#' Test your installation of sa4ss
+#' Test your installation of sa4all
 #'
-#' Test the installation of sa4ss to build the template pdf.
+#' Test the installation of sa4all to build the template pdf.
 #'
 #' @details
-#' sa4ss relies on a lot of back-end functionality that typical R packages
+#' sa4all relies on a lot of back-end functionality that typical R packages
 #' do not require. Ensuring that these are installed properly is facilitated
 #' when you use Rstudio because the developers of Rstudio have put in a lot of
-#' work towards making it easy for users to compile documents. sa4ss also relies
+#' work towards making it easy for users to compile documents. sa4all also relies
 #' on `sed` which is available in the tools provided by R, i.e., rtools40, but
 #' not always available in your path.
 #'
@@ -21,7 +21,7 @@
 #' The first entry, `session_info`,
 #' contains stored information about your work session.
 #' The typical output from [Sys.getenv] is augmented with information pertinent
-#' to the sa4ss package and compiling accessible pdf documents.
+#' to the sa4all package and compiling accessible pdf documents.
 #' The second entry, `tried`, is the output from [tryCatch] when attempting
 #' to compile the .Rmd files into a pdf using [bookdown::render_book].
 #' If the function fails to produce a successful pdf, then a
@@ -38,14 +38,14 @@ session_test <- function() {
   #### Set up
   oldwd <- getwd()
   on.exit(setwd(oldwd), add = TRUE)
-  newdir <- file.path(tempdir(), "sa4ss")
+  newdir <- file.path(tempdir(), "sa4all")
   on.exit(unlink(newdir, recursive = TRUE), add = TRUE)
   ignore <- dir.create(newdir, recursive = TRUE, showWarnings = FALSE)
   setwd(newdir)
 
   #### Make the test pdf
   localinfo <- session_info()
-  sa4ss::draft(authors = "Kelli F. Johnson", create_dir = FALSE)
+  sa4all::draft(authors = "Kelli F. Johnson", create_dir = FALSE)
   theworks <- tryCatch(
     expr = bookdown::render_book("00a.Rmd", clean = FALSE, output_dir = getwd()),
     error = function(x) x)
@@ -54,7 +54,7 @@ session_test <- function() {
   if (!file.exists("_main.pdf")) {
     writeLines(do.call(paste,list(names(localinfo)," -- ", localinfo)))
     utils::flush.console()
-    utils::bug.report(package = "sa4ss")
+    utils::bug.report(package = "sa4all")
     message("Use the template for installation issues to get help.\n",
       "Please, include the output returned from this function in the issue.")
   }

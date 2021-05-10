@@ -15,12 +15,13 @@
 
 get_affiliation <- function(authors) {
   e1 <- new.env()
-  utils::data(authors, package = "sa4ss", envir = e1)
+  utils::data(authors, package = "sa4all", envir = e1)
 
   abbreviations <- match(authors, get("authors", envir = e1)[, "author"])
   doc <- "U.S. Department of Commerce"
   noaa <- "National Oceanic and Atmospheric Administration"
   nmfs <- "National Marine Fisheries Service"
+  afsc  <- "Alaska Fisheries Science Center"
   nwfsc <- "Northwest Fisheries Science Center"
   swfsc <- "Southwest Fisheries Science Center"
   if (any(is.na(abbreviations))) {
@@ -32,6 +33,7 @@ get_affiliation <- function(authors) {
   affiliations <- data.frame(
   # Alphabetical order of abbreviations and then affiliations must match order
     abbreviation = c(
+      "AFSC_REFM",
       "CDFW",
       "NWFSC_OR",
       "NWFSC_WA",
@@ -42,6 +44,7 @@ get_affiliation <- function(authors) {
       "WCR",
       "WDFW"),
     affiliation = c(
+      paste0(afsc, ", ", doc, ", ", noaa, ", ", nmfs, ", ", "7600 Sand Point Way NE, Seattle, Washington 98115"),
       "California Department of Fish and Wildlife, 350 Harbor Boulevard, Belmont, California 94002",
       paste0(nwfsc, ", ", doc, ", ", noaa, ", ", nmfs, ", ", "2032 Southeast OSU Drive, Newport, Oregon 97365"),
       paste0(nwfsc, ", ", doc, ", ", noaa, ", ", nmfs, ", ", "2725 Montlake Boulevard East, Seattle, Washington 98112"),

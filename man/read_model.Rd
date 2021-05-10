@@ -2,7 +2,7 @@
 % Please edit documentation in R/read_model.R
 \name{read_model}
 \alias{read_model}
-\title{Create a \pkg{sa4ss} an RData object}
+\title{Create a \pkg{sa4all} an RData object}
 \usage{
 read_model(
   mod_loc,
@@ -110,20 +110,20 @@ output files from Stock Synthesis into a list.}
 }
 \description{
 Read an SS model output using \pkg{r4ss} to create a RData object with defined quantities
-to be used when creating an assessment document using sa4ss
-document written with \pkg{sa4ss}.
+to be used when creating an assessment document using sa4all
+document written with \pkg{sa4all}.
 }
 \details{
 Read an SS model output using \pkg{r4ss} to create a RData object with defined quantities
-to be used when creating an assessment document using sa4ss
-document written with \pkg{sa4ss}.
+to be used when creating an assessment document using sa4all
+document written with \pkg{sa4all}.
 }
 \examples{
 \dontrun{
 simplemod_loc <- tail(dir(pattern = "simple",
   system.file("extdata", package = "r4ss"),
   full.names = TRUE), 1)
-sa4ss::read_model(mod_loc = simplemod_loc,
+sa4all::read_model(mod_loc = simplemod_loc,
   fecund_mult = "billion eggs")
 }
 }
