@@ -20,10 +20,13 @@ Back to [table of contents](#sa4ss)
 # User community
 
 The package is intended for use by analysts within the Northwest and Southwest Fisheries Science Centers.
-Regardless of your affiliation, please feel free to post any issues or questions that you have to the [issues page](https://github.com/nwfsc-assess/sa4ss/issues).
+Regardless of your affiliation, please feel free to post any issues or questions that you have to the [issues page](https://github.com/nwfsc-assess/sa4ss/issues). To adapt to the practices at the Alaska Fisheries Science Center, the repository was forked with an attempt to be less provincial (for non-SS assessments and those that differ from the NWFSC paradigms).
+
 Tags are available to mark your issue with an appropriate category.
 These categories are instrumental for providing guidance to the package maintainers regarding how to respond your issue and to other users that follow this repository where they facilitate searching within issues.
 Before you create an issue, please try the [example](#example) below to determine if the package works for you in general. If it doesn't work, then please try to reinstall the package before posting an issue. Code to reinstall is also available [below](#example).
+
+
 
 Back to [table of contents](#sa4ss)
 
