@@ -1,0 +1,13 @@
+---
+author:
+  - name: James N. Ianelli
+    code: 1
+    first: J
+    middle: 'N'
+    family: Ianelli
+author_list: Ianelli, J.N
+affiliation:
+  - code: 1
+    address: .na.character
+address: ^1^NA
+---

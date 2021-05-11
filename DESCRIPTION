@@ -1,6 +1,6 @@
 Package: sa4all
 Title: Write Stock Assessments for general purposes
-Version: 0.0.0.0001
+Version: 0.0.0.0002
 Authors@R: c(
     person(given = c("Kelli", "F."),
       family = "Johnson",
